@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/lacrosse/static/css/main.cba372b2.chunk.css",
-    "main.js": "/lacrosse/static/js/main.0216c646.chunk.js",
-    "main.js.map": "/lacrosse/static/js/main.0216c646.chunk.js.map",
-    "runtime-main.js": "/lacrosse/static/js/runtime-main.38b0beea.js",
-    "runtime-main.js.map": "/lacrosse/static/js/runtime-main.38b0beea.js.map",
+    "main.js": "/lacrosse/static/js/main.38a82957.chunk.js",
+    "main.js.map": "/lacrosse/static/js/main.38a82957.chunk.js.map",
+    "runtime-main.js": "/lacrosse/static/js/runtime-main.e858357d.js",
+    "runtime-main.js.map": "/lacrosse/static/js/runtime-main.e858357d.js.map",
     "static/css/2.96e8464d.chunk.css": "/lacrosse/static/css/2.96e8464d.chunk.css",
-    "static/js/2.e7dd5317.chunk.js": "/lacrosse/static/js/2.e7dd5317.chunk.js",
-    "static/js/2.e7dd5317.chunk.js.map": "/lacrosse/static/js/2.e7dd5317.chunk.js.map",
-    "static/js/3.bfd5ff04.chunk.js": "/lacrosse/static/js/3.bfd5ff04.chunk.js",
-    "static/js/3.bfd5ff04.chunk.js.map": "/lacrosse/static/js/3.bfd5ff04.chunk.js.map",
+    "static/js/2.cd07aa47.chunk.js": "/lacrosse/static/js/2.cd07aa47.chunk.js",
+    "static/js/2.cd07aa47.chunk.js.map": "/lacrosse/static/js/2.cd07aa47.chunk.js.map",
+    "static/js/3.6f5e76e1.chunk.js": "/lacrosse/static/js/3.6f5e76e1.chunk.js",
+    "static/js/3.6f5e76e1.chunk.js.map": "/lacrosse/static/js/3.6f5e76e1.chunk.js.map",
     "index.html": "/lacrosse/index.html",
     "static/css/2.96e8464d.chunk.css.map": "/lacrosse/static/css/2.96e8464d.chunk.css.map",
     "static/css/main.cba372b2.chunk.css.map": "/lacrosse/static/css/main.cba372b2.chunk.css.map",
-    "static/js/2.e7dd5317.chunk.js.LICENSE.txt": "/lacrosse/static/js/2.e7dd5317.chunk.js.LICENSE.txt",
+    "static/js/2.cd07aa47.chunk.js.LICENSE.txt": "/lacrosse/static/js/2.cd07aa47.chunk.js.LICENSE.txt",
     "static/media/styles.scss": "/lacrosse/static/media/roboto-vietnamese-700-normal.3096f18a.woff2",
     "static/media/whipsnakes_logo.21cd72fa.png": "/lacrosse/static/media/whipsnakes_logo.21cd72fa.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.38b0beea.js",
+    "static/js/runtime-main.e858357d.js",
     "static/css/2.96e8464d.chunk.css",
-    "static/js/2.e7dd5317.chunk.js",
+    "static/js/2.cd07aa47.chunk.js",
     "static/css/main.cba372b2.chunk.css",
-    "static/js/main.0216c646.chunk.js"
+    "static/js/main.38a82957.chunk.js"
   ]
 }
