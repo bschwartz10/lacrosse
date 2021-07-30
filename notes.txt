@@ -1,0 +1,2 @@
+favicon
+margin-right on chevron on table

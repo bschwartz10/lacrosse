@@ -1,0 +1,29 @@
+.connected-scatterplot {
+  width: 600px;
+  position: relative;
+
+  .tick {
+    font-size: 14px;
+  }
+
+  .select__container {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    width: 330px;
+    height: 30px;
+
+    select {
+      width: 100px;
+      height: 100%;
+    }
+  }
+
+  .select__container::before {
+    content: 'Choose Statistic:';
+    margin-right: 5px;
+  }
+}

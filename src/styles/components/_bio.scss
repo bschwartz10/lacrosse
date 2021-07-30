@@ -1,0 +1,286 @@
+.bio {
+  background-color: $green;
+
+  .bio__top {
+    height: 296px;
+    padding: 0 100px;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    .images {
+      margin-right: 100px;
+      .team-logo {
+        width: 100px;
+        position: absolute;
+        left: 40px;
+        top: 20px;
+      }
+      .player-logo {
+        width: 175px;
+
+        img {
+          border-radius: 100px;
+        }
+      }
+    }
+    .basic-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .team-position {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+        &.text-piped p:after {
+          content: "|";
+          margin: 0 10px;
+        }
+
+        &.text-piped p:last-child:after {
+          content: "";
+          margin: 0 10px;
+        }
+
+        p {
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: 400;
+        }
+      }
+      h1 {
+        font-size: 60px;
+        line-height: 60px;
+
+        &.first-name {
+          font-weight: 100;
+        }
+      }
+    }
+  }
+  .bio__bottom {
+    height: 126px;
+    background-color: $green-dark;
+    display: flex;
+    color: $white;
+
+    .stats {
+      display: flex;
+      flex-direction: row;
+      min-width: 40%;
+
+      .ver-divider {
+        width: 1px;
+        height: 100%;
+        border-left: 1px solid;
+        opacity: 0.25;
+      }
+
+      .stat-category {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 20px 0px;
+
+        .stats-teamplayer-summary-text {
+          font-size: 16px;
+          letter-spacing: 0.05em;
+          line-height: 20px;
+          font-weight: 400;
+          color: $white;
+
+          &.medium {
+            font-size: 28px;
+            line-height: 35px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .personal {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 0px;
+      .personal-section {
+        flex: 1 1 0px;
+        display: flex;
+
+        .personal-info {
+          display: flex;
+          flex: 1 1 0px;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          padding: 12px 2px;
+
+          .stats-teamplayer-summary-text {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+            margin-bottom: 2px;
+          }
+          .stats-teamplayer-summary-text.small {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+          }
+        }
+      }
+      .ver-divider {
+        width: 1px;
+        height: 100%;
+        border-left: 1px solid;
+        border-color: $white;
+        opacity: 0.25;
+      }
+      .hor-divider {
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px solid;
+        border-color: $white;
+        opacity: 0.25;
+      }
+    }
+    .toggle-personal-section {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: $md-breakpoint) {
+  .bio {
+    .bio__top {
+      justify-content: space-between;
+      .images {
+        margin-right: 20px;
+        .team-logo {
+          width: 100px;
+        }
+        .player-logo {
+          width: 150px;
+
+          img {
+            border-radius: 100px;
+          }
+        }
+      }
+      .basic-info {
+        h1 {
+          font-size: 48px;
+        }
+        .team-position {
+          p {
+            font-size: 16px;
+          }
+          &.text-piped p:after {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+    .bio__bottom {
+      flex-wrap: wrap;
+      height: auto;
+      .stats {
+        width: 100%;
+        justify-content: center;
+        border-bottom: 1px solid;
+        border-color: rgba(255, 255, 255, 0.25);
+        .stat-category {
+          width: 98px;
+        }
+        .ver-divider:first-of-type,
+        .ver-divider:last-of-type {
+          display: none;
+        }
+        .ver-divider {
+          height: 50%;
+          margin: auto 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $sm-breakpoint) {
+  .bio {
+    .bio__top {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      .images {
+        margin: 0 0 20px 0;
+        .team-logo {
+          position: relative;
+          left: -60px;
+          top: 50px;
+        }
+      }
+
+      .basic-info {
+        .team-position {
+          justify-content: center;
+          margin-bottom: 10px;
+        }
+
+        .name {
+          display: flex;
+          .first-name {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .bio__bottom {
+      .toggle-personal-section {
+        display: flex;
+        height: 62px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid;
+        border-color: rgba(255, 255, 255, 0.25);
+
+        .chevron::before {
+          border-style: solid;
+          border-width: 0.25em 0.25em 0 0;
+          content: "";
+          display: inline-block;
+          height: 0.45em;
+          left: 5px;
+          position: relative;
+          top: 7px;
+          transform: rotate(-45deg);
+          vertical-align: top;
+          width: 0.45em;
+        }
+
+        .chevron.bottom::before {
+          top: 2px;
+          transform: rotate(135deg);
+        }
+
+        button {
+          background: none;
+          color: inherit;
+          border: none;
+          padding: 0;
+          font: inherit;
+          cursor: pointer;
+          outline: inherit;
+        }
+      }
+
+      .personal {
+        display: none;
+      }
+      .personal.is-visible {
+        display: flex;
+      }
+    }
+  }
+}
