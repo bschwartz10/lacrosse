@@ -236,6 +236,15 @@
       }
     }
     .bio__bottom {
+      .personal {
+        .personal-section {
+          .personal-info {
+            .stats-teamplayer-summary-text {
+              font-size: 15px;
+            }
+          }
+        }
+      }
       .toggle-personal-section {
         display: block;
         height: 62px;
