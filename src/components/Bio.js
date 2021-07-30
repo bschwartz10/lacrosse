@@ -8,7 +8,7 @@ export default function Bio() {
   const [isPersonalDetailsVisible, setIsPersonalDetailsVisible] = useState(false)
 
   return (
-    <main className="bio">
+    <div className="bio">
       <div className="bio__top">
         <div className="images">
           <div className="team-logo">
@@ -109,6 +109,6 @@ export default function Bio() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   )
 }
