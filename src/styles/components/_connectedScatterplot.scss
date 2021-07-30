@@ -3,7 +3,7 @@
   position: relative;
 
   .tick {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .select__container {
@@ -23,7 +23,7 @@
   }
 
   .select__container::before {
-    content: 'Choose Statistic:';
+    content: "Select Stat:";
     margin-right: 5px;
   }
 }
