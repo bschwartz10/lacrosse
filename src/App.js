@@ -12,6 +12,7 @@ export default function App() {
       <Bio />
       <div className="page-section">
         <div className="page-section-header">
+          <div id="game-log"></div>
           <FaClipboard className="icon clipboard" />
           <h2>2020 Game Log</h2>
           <hr className="mini-line" />
@@ -22,6 +23,7 @@ export default function App() {
       </div>
       <div className="page-section">
         <div className="page-section-header">
+          <div id="statistical-graph"></div>
           <IoAnalytics className="icon clipboard" />
           <h2>Statistical Graph</h2>
           <hr className="mini-line" />

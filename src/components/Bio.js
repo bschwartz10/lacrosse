@@ -29,6 +29,11 @@ export default function Bio() {
             <h1>{player.lastName}</h1>
           </div>
         </div>
+        <div className="jump-links text-piped">
+          <p>Jump To:</p>
+          <a href="#game-log">Game Log</a>
+          <a href="#statistical-graph">Stat Graph</a>
+        </div>
       </div>
       <div className="bio__bottom">
         <div className="stats">
