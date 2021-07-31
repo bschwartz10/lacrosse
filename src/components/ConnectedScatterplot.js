@@ -16,6 +16,17 @@ export default function ConnectedScatterplot() {
 
     const g = svg.append('g').attr('transform', `translate(${margin.left}, ${margin.top})`)
 
+    // Title
+    const title = g
+      .append('text')
+      .attr('class', 'graph-title')
+      .attr('x', width / 2)
+      .attr('y', 90)
+      .attr('font-size', '20px')
+      .attr('text-decoration', 'underline')
+      .attr('text-anchor', 'middle')
+      .text('Goals P/G')
+
     // X label
     g.append('text')
       .attr('class', 'x axis-label')
@@ -130,6 +141,7 @@ export default function ConnectedScatterplot() {
           .attr('cy', (d) => y(+d.value))
 
         yLabel.text(selectedGroup.charAt(0).toUpperCase() + selectedGroup.slice(1))
+        title.text(`${selectedGroup.charAt(0).toUpperCase() + selectedGroup.slice(1)} P/G`)
       }
 
       // // When the button is changed, run the updateChart function
