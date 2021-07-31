@@ -118,27 +118,9 @@ h2 {
   }
 }
 
-.page-section--green {
-  background: $green;
-  padding: 3.63rem 155px;
-
-  .page-section-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    &.align-left {
-      align-items: flex-start;
-    }
-  }
-}
-
 @media only screen and (max-width: $md-breakpoint) {
   .page-section {
     margin: 3.13rem 25px;
-  }
-  .page-section--green {
-    padding: 3.13rem 25px;
   }
 }
 
@@ -146,12 +128,5 @@ h2 {
   .page-section {
     margin: 60px auto;
     min-width: 1130px;
-  }
-
-  .page-section--green {
-    .page-section-content {
-      max-width: 1130px;
-      margin: 0 auto;
-    }
   }
 }
